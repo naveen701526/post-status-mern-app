@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/naveen701526/post-status-mern-app#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.12.14"
   },
