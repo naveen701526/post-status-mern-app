@@ -1,10 +1,13 @@
 import express from "express";
 import mongoose from "mongoose";
+import postsRoutes from "./routes/posts.js";
 
 const app = express();
 
+app.use("/posts", postsRoutes);
+
 const CONNECTION_URL =
-  "mongodb+srv://naveenmetta:hD%4fbkugWyjwL7a@cluster0.kakj9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+  "mongodb+srv://naveenmetta:CylO6MzIv2Qfmm22@cluster0.kakj9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 const PORT = process.env.PORT || 5000;
 
